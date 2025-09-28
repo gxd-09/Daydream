@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8ro0h7nxoimx"]
-
-[ext_resource type="Texture2D" uid="uid://c1m5uweo5td3h" path="res://assets/assets2/sprites/heart.png" id="1_v30as"]
-
-[node name="Heart" type="Sprite2D"]
-texture = ExtResource("1_v30as")
-region_enabled = true
-region_rect = Rect2(0, 0, 13, 12)
