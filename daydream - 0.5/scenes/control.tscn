@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://chxfy6ocvogcn"]
+
+[ext_resource type="Texture2D" uid="uid://cha8dnnwh1uhr" path="res://pixel_background.jpg" id="1_5p55f"]
+[ext_resource type="Script" uid="uid://nyfpljj4ihec" path="res://scenes/startscreen.gd" id="1_r67kn"]
+[ext_resource type="Texture2D" uid="uid://dkj2ihv71hyop" path="res://pngtree-start-button-in-pixel-art-style-png-image_4764304 (1).png" id="3_brbbq"]
+[ext_resource type="AudioStream" uid="uid://dymxcn8oorn00" path="res://assets/Menu_Music.mp3" id="4_8n18e"]
+
+[node name="Startscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r67kn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.75, 328)
+scale = Vector2(1.8067293, 1.8111111)
+texture = ExtResource("1_5p55f")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.201
+anchor_bottom = 0.113000005
+offset_left = 427.0
+offset_top = 311.0
+offset_right = 494.448
+offset_bottom = 311.776
+text = "Start"
+
+[node name="Sprite2D" type="Sprite2D" parent="Start"]
+position = Vector2(149, 35)
+scale = Vector2(0.6642378, 0.56540704)
+texture = ExtResource("3_brbbq")
+region_enabled = true
+region_rect = Rect2(15, 88.5, 446, 172)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(151, 401)
+stream = ExtResource("4_8n18e")
+autoplay = true
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

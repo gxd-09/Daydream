@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqlge0ubfjm5"]
+
+[ext_resource type="Texture2D" uid="uid://imbyow1givdb" path="res://scenes/win10-black-screen-cursor-100863842-orig.webp" id="1_jq5d3"]
+[ext_resource type="FontFile" uid="uid://dchdi702gq3i1" path="res://assets/assets2/fonts/PixelOperator8-Bold.ttf" id="2_qgcgv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(389, 305)
+scale = Vector2(1.7233334, 1.6791614)
+texture = ExtResource("1_jq5d3")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Label" type="Label" parent="."]
+z_index = 10
+offset_left = 132.0
+offset_top = 219.0
+offset_right = 2269.0
+offset_bottom = 520.0
+theme_override_colors/font_color = Color(0.9764706, 0.6117647, 0.043137256, 1)
+theme_override_fonts/font = ExtResource("2_qgcgv")
+theme_override_font_sizes/font_size = 100
+text = "You Lost!
+      :("
